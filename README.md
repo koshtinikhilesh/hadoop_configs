@@ -3,7 +3,7 @@ This repo contains the configurations file we need to add while installing hadoo
 
 Note: Replace public_dns below with the "EC2 Public DNS" value from AWS console
 
-
+```
 export HADOOP_HOME=/home/hadoop/hadoop
 export HADOOP_INSTALL=$HADOOP_HOME
 export HADOOP_MAPRED_HOME=$HADOOP_HOME
@@ -14,7 +14,7 @@ export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 
-
+```
 
 
 
