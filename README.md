@@ -30,17 +30,19 @@ sudo apt-get install openjdk-8-jdk
 
 - core-site.xml
 
+```
 <configuration>
 <property>
   <name>fs.defaultFS</name>
   <value>hdfs://<public dns>:9000</value>
 </property>
 </configuration>
-
+```
 
 
 - hdfs-site.xml
 
+```
 <configuration>
 <property>
  <name>dfs.replication</name>
@@ -57,12 +59,13 @@ sudo apt-get install openjdk-8-jdk
     <value>file:///home/hadoop/hadoop/hadoopdata/hdfs/datanode</value>
 </property>
 </configuration>
-
+```
 
 
 
 -yarn-site.xml
 
+```
 <configuration>
  <property>
   <name>yarn.nodemanager.aux-services</name>
@@ -79,12 +82,12 @@ sudo apt-get install openjdk-8-jdk
   </property>
 </configuration>
 
-
+```
 
 -mapred-site.xml
 
 
-
+```
 <configuration>
  <property>
   <name>mapreduce.framework.name</name>
@@ -95,6 +98,7 @@ sudo apt-get install openjdk-8-jdk
     <value><public dns>:8021</value>
   </property>
 </configuration>
+```
 
 (4) Update /etc/hosts
 
@@ -103,9 +107,11 @@ hostname             public dns
 
 
 (5) Execute hadoop commands
+```
  hdfs namenode -format
-./start-all.sh
 
+./start-all.sh
+```
 
 
 
