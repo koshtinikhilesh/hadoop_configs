@@ -114,6 +114,17 @@ hostname             public dns
 ```
 
 
+Note:
+If you encounter errors like "Connection Refused - Public Key", please execute the below command from your hadoop user (NOT ROOT USER):
+```
+ssh-keygen -t rsa
+```
+```
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+```
+```
+chmod og-wx ~/.ssh/authorized_keys
+```
 
 
 
