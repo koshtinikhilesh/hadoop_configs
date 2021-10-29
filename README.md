@@ -119,6 +119,7 @@ hostname             public dns
 ```
  hdfs namenode -format
 
+cd $HADOOP_HOME/sbin
 ./start-all.sh
 ```
 
