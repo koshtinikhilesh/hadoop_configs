@@ -1,4 +1,9 @@
 # hadoop_configs
+"NOTE: The below file is designed with hadoop on AWS EC2 Cloud".
+
+The similiar file could be used for local hadoop setup wherein the below configuration: replace public dns to localhost
+
+
 This repo contains the configurations file we need to add while installing hadoop installation on EC2 AWS.
 
 Note: Replace public_dns below with the "EC2 Public DNS" value from AWS console
