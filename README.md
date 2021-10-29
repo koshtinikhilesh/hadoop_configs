@@ -104,6 +104,10 @@ sudo apt-get install openjdk-8-jdk
   </property>
 </configuration>
 ```
+NOTE:
+If you get "JAVA_HOME not defined error", open hadoop-env.sh file
+and search for export JAVA_HOME, replace it will export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+
 
 (4) Update /etc/hosts
 
